@@ -1,0 +1,35 @@
+<!-- To run back end type "mvn spring-boot:run" -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Compiler MVP</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Java Online Compiler</h1>
+    <p>Write Java code below and click Run.</p>
+
+    <textarea id="code">
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello from Java!");
+    }
+}
+    </textarea>
+
+    <div class="buttons">
+      <button id="runBtn">Run Code</button>
+      <button id="clearBtn">Clear Output</button>
+    </div>
+
+    <h2>Output</h2>
+    <pre id="output">Your output will appear here...</pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
