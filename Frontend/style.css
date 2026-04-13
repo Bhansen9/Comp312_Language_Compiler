@@ -1,39 +1,57 @@
+/* Base */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f1a17;
+  color: #e8f1ef;
 }
 
+/* Container */
 .container {
   max-width: 900px;
   margin: 40px auto;
-  background: white;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  background: #13221d;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(46, 196, 182, 0.15);
 }
 
+/* Headings */
 h1 {
   margin-top: 0;
+  color: #2ec4b6;
+  letter-spacing: 1px;
 }
 
+.subtitle {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  color: #a8dadc;
+  font-size: 14px;
+}
+
+/* Code Area (chalkboard feel) */
 textarea {
   width: 100%;
   height: 350px;
-  padding: 12px;
-  font-family: Consolas, monospace;
+  padding: 14px;
+  font-family: 'Courier New', monospace;
   font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 2px solid #2ec4b6;
+  border-radius: 10px;
   resize: vertical;
   box-sizing: border-box;
+  background: #0a1412;
+  color: #e8f1ef;
+  outline: none;
 }
 
+/* Buttons */
 .buttons {
-  margin-top: 12px;
+  margin-top: 14px;
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 button {
@@ -41,21 +59,51 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  background: #222;
-  color: white;
   font-size: 14px;
+  transition: all 0.2s ease;
 }
 
-button:hover {
-  opacity: 0.9;
+/* Run Button */
+.run {
+  background: #2ec4b6;
+  color: #0f1a17;
+  font-weight: bold;
 }
 
+.run:hover {
+  background: #27b3a6;
+  transform: scale(1.05);
+}
+
+/* Clear Button */
+.clear {
+  background: transparent;
+  border: 1px solid #2ec4b6;
+  color: #2ec4b6;
+}
+
+.clear:hover {
+  background: #2ec4b6;
+  color: #0f1a17;
+}
+
+/* Output box */
 pre {
-  background: #111;
-  color: #00ff66;
-  padding: 16px;
-  border-radius: 8px;
+  background: #050a08;
+  color: #00ff9c;
+  padding: 18px;
+  border-radius: 10px;
   min-height: 180px;
   overflow-x: auto;
   white-space: pre-wrap;
+  border: 1px solid #2ec4b6;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #6c9f9a;
 }
